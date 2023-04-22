@@ -1,0 +1,21 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let hs of historyData">
+
+            <div class="historybox mt-3 mb-3">
+                <img src="{{hs.historyImg}}">
+                <h1>{{hs.historyName}}</h1>
+                <p>{{hs.historyDetail}}</p>
+                <p>{{hs.historyYear}}</p>
+                <!--<br/> I commented it out so --> 
+                <a class="lrnbtn" [routerLink]="['/history',hs.id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>

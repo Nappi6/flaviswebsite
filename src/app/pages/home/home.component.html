@@ -1,0 +1,49 @@
+<div class="banner">
+    <div class="content">
+        <h1 class="mb-5">A brief introduction.</h1>
+        <a routerLink="about">READ MORE <i class="bi bi-arrow-right"></i></a>
+    </div>
+</div>
+<!--step-->
+<div class="container mt-5 mb-5">
+    <h1 class="text-center mb-4">Here are the <span class="highlight">main pages:</span></h1>
+    <div class="row mt-5">
+        <!--one-->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>About</h1>
+                <p>Letter of intent. <br> What are my motivations?</p>
+            </div>
+        </div>
+<!--two--> 
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>History</h1>
+                <p>Who am I? <br> What do I know and like?</p>
+                
+            </div>
+        </div>
+        <!--three-->
+        <div class="col-lg-4 mt-2">
+            <div class="stepBox">
+                <h1>Contact</h1>
+                <p>Outlets through which <br> I can be reached out to.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--historybox-->
+<div class="container mt-4 mb-4">
+    <h1 class="text-center">Preview of the <span class="highlight">History page:</span></h1>
+    <div class="row">
+        <div class="col-lg-3 mt-3" *ngFor= "let hs of historyData;index as i">
+            <div class="historybox" *ngIf="i<=3">
+                <img src="{{hs.historyImg}}" />
+                <h1>{{hs.historyName}}</h1>
+                <p>{{hs.historyYear}}</p>
+            </div>
+        </div>
+    </div>
+    <a routerLink="history" class="viewmorebtn">view more <i class="bi bi-arrow-right"></i></a>
+</div>
