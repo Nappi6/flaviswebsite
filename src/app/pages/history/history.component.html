@@ -2,20 +2,65 @@
 
     <div class="row">
 
-        <div class="col-lg-4" *ngFor="let hs of historyData">
-
+        <div class="col-lg-4">
             <div class="historybox mt-3 mb-3">
-                <img src="{{hs.historyImg}}">
-                <h1>{{hs.historyName}}</h1>
-                <p>{{hs.historyDetail}}</p>
-                <p>{{hs.historyYear}}</p>
+                <div class="histo1"></div>
+                <h1>{{historyData[0].historyName}}</h1>
+                <p>{{historyData[0].historyYear}}</p>
                 <!--<br/> I commented it out so --> 
-                <a class="lrnbtn" [routerLink]="['/history',hs.id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
+                <a class="lrnbtn" [routerLink]="['/history',historyData[0].id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
             </div>
-
         </div>
 
+        <div class="col-lg-4">
+            <div class="historybox mt-3 mb-3">
+                <div class="histo2"></div>
+                <h1>{{historyData[1].historyName}}</h1>
+                <p>{{historyData[1].historyYear}}</p>
+                <!--<br/> I commented it out so --> 
+                <a class="lrnbtn" [routerLink]="['/history',historyData[1].id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
 
+        <div class="col-lg-4">
+            <div class="historybox mt-3 mb-3">
+                <div class="histo3"></div>
+                <h1>{{historyData[2].historyName}}</h1>
+                <p>{{historyData[2].historyYear}}</p>
+                <!--<br/> I commented it out so --> 
+                <a class="lrnbtn" [routerLink]="['/history',historyData[2].id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="historybox mt-3 mb-3">
+                <div class="histo4"></div>
+                <h1>{{historyData[3].historyName}}</h1>
+                <p>{{historyData[3].historyYear}}</p>
+                <!--<br/> I commented it out so --> 
+                <a class="lrnbtn" [routerLink]="['/history',historyData[3].id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="historybox mt-3 mb-3">
+                <div class="histo5"></div>
+                <h1>{{historyData[4].historyName}}</h1>
+                <p>{{historyData[4].historyYear}}</p>
+                <!--<br/> I commented it out so --> 
+                <a class="lrnbtn" [routerLink]="['/history',historyData[4].id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="historybox mt-3 mb-3">
+                <div class="histo6"></div>
+                <h1>{{historyData[5].historyName}}</h1>
+                <p>{{historyData[5].historyYear}}</p>
+                <!--<br/> I commented it out so --> 
+                <a class="lrnbtn" [routerLink]="['/history',historyData[5].id]">Learn More &nbsp;<i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
     </div>
 
 </div>
