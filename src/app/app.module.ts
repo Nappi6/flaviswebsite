@@ -10,6 +10,12 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { HistorypageComponent } from './pages/historypage/historypage.component';
+import { Histo1Component } from './pages/histos/histo1/histo1.component';
+import { Histo2Component } from './pages/histos/histo2/histo2.component';
+import { Histo3Component } from './pages/histos/histo3/histo3.component';
+import { Histo4Component } from './pages/histos/histo4/histo4.component';
+import { Histo5Component } from './pages/histos/histo5/histo5.component';
+import { Histo6Component } from './pages/histos/histo6/histo6.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { HistorypageComponent } from './pages/historypage/historypage.component'
     AboutComponent,
     ContactComponent,
     HistoryComponent,
-    HistorypageComponent
+    HistorypageComponent,
+    Histo1Component,
+    Histo2Component,
+    Histo3Component,
+    Histo4Component,
+    Histo5Component,
+    Histo6Component
   ],
   imports: [
     BrowserModule,

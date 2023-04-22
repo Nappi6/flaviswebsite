@@ -2,9 +2,12 @@
 
     <div class="row">
 
-        <div class="col-lg-6" *ngIf="historyData">
+        <div class="col-lg-6">
             <a routerLink="../../history" class="btn btn-sm btn-dark mb-3">Back</a>
-            <img src="{{historyData[0].historyImg}}" width="100%" />
+            <!-- I really would have loved to display images,
+            but it's been more than 12 hours of failed attempts 
+            so I'll humbly stop here. Maybe sometime later. -->
+            <!-- <img src="{{historyData[0].historyImg}}" width="100%" /> -->
             <h1 class="mt-3">{{historyData[0].historyName}}</h1>
             <p>{{historyData[0].historyYear}}</p>
             <p>{{historyData[0].historyDetails}}</p>
