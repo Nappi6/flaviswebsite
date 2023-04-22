@@ -37,11 +37,35 @@
 <div class="container mt-4 mb-4">
     <h1 class="text-center">Preview of the <span class="highlight">History page:</span></h1>
     <div class="row">
-        <div class="col-lg-3 mt-3" *ngFor= "let hs of historyData;index as i">
-            <div class="historybox" *ngIf="i<=3">
-                <img src="../../../assets/img/histo1.jpg" />
-                <h1>{{hs.historyName}}</h1>
-                <p>{{hs.historyYear}}</p>
+        <div class="col-lg-3 mt-3">
+            <div class="historybox">
+                <div class="histo1"></div>
+                <h1>{{historyData[0].historyName}}</h1>
+                <p>{{historyData[0].historyYear}}</p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 mt-3">
+            <div class="historybox">
+                <div class="histo2"></div>
+                <h1>{{historyData[1].historyName}}</h1>
+                <p>{{historyData[1].historyYear}}</p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 mt-3">
+            <div class="historybox">
+                <div class="histo3"></div>
+                <h1>{{historyData[2].historyName}}</h1>
+                <p>{{historyData[2].historyYear}}</p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 mt-3">
+            <div class="historybox">
+                <div class="histo4"></div>
+                <h1>{{historyData[3].historyName}}</h1>
+                <p>{{historyData[3].historyYear}}</p>
             </div>
         </div>
     </div>
